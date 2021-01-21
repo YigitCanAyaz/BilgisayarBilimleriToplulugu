@@ -50,7 +50,7 @@ a {
 }
 
 .main-head {
-  background: #000000;
+  background: #0a0d10;
   color: white;
   position: sticky;
   top: 0px;
@@ -84,34 +84,25 @@ nav ul {
 
 .about {
   flex-direction: column;
-  min-height: 80vh;
-  background-color: rgb(117, 0, 0);
+  min-height: 90vh;
   color: white;
   text-align: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
-    url("/icons/1_OOWSoWHeQ5kyJ4N0P2ptNA.png");
+  background: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.about h2 {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background: rgb(36, 52, 59);
-  padding: 5rem 10rem;
-  text-align: center;
+.about h3 {
+  padding: 10rem;
+  line-height: 6rem;
 }
 
-.about h3 {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background: rgb(36, 52, 59);
-  padding: 5rem 10rem;
+@media screen and (max-width: 1015px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
 }
