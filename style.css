@@ -6,10 +6,11 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .flex {
@@ -45,13 +46,13 @@ h5 {
 }
 
 a {
-  color: white;
+  color: rgba(255, 255, 255, 0.788);
   text-decoration: none;
 }
 
 .main-head {
-  background: #0a0d10;
-  color: white;
+  background: #283743;
+  color: rgba(255, 255, 255, 0.788);
   position: sticky;
   top: 0px;
   z-index: 3;
@@ -79,23 +80,88 @@ nav ul {
   align-items: center;
   min-width: 30rem;
   list-style: none;
-  font-size: 2rem;
+}
+
+nav ul li {
+  font-size: 2.5rem;
 }
 
 .about {
   flex-direction: column;
-  min-height: 90vh;
-  color: white;
+  min-height: 80vh;
+  color: rgba(255, 255, 255, 0.788);
   text-align: center;
-  background: black;
+  background: #283743;
+}
+
+.about h1 {
+  line-height: 6rem;
+  font-size: 3.5rem;
+  margin-top: 10rem;
+}
+
+.events {
+  min-height: 80vh;
+  background: linear-gradient(#283743, transparent),
+    url("/icons/1_OOWSoWHeQ5kyJ4N0P2ptNA.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  flex-direction: column;
+  position: relative;
 }
 
-.about h3 {
-  padding: 10rem;
-  line-height: 6rem;
+.events-head {
+  background: linear-gradient(#283743, transparent);
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  background: #283743;
+  padding: 5rem 10rem;
+  margin-top: 15rem;
+}
+
+.events-head h3 {
+  padding: 3rem;
+}
+
+.event-cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgba(255, 255, 255, 0.788);
+}
+
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  background: #283743;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1); /* x to 0 y to 10, blur 10 */
+}
+
+.card-icon {
+  background: rgba(255, 255, 255, 0.788);
+}
+
+.event-cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.event-cards h4,
+p {
+  padding: 1rem;
+  line-height: 1.8; /* default */
 }
 
 @media screen and (max-width: 1015px) {
